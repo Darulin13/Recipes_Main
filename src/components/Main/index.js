@@ -17,6 +17,9 @@ export function Main() {
           imgspoon {
             url
           }
+          imgpizza {
+            url
+          }
           latesttitle
           lorem
           paragraphcake
@@ -34,7 +37,7 @@ export function Main() {
   const {
     latesttitle,
     imgcake,
-    imgpizza,
+
     imgshake,
     imgspoon,
     paragraphcake,
@@ -44,7 +47,8 @@ export function Main() {
     lorem,
     subscribe,
     submit,
-    signup
+    signup,
+    imgpizza
   } = data.recipedata.mains[0];
   console.log("Main", data);
 
@@ -53,16 +57,28 @@ export function Main() {
       <h1>{latesttitle}</h1>
       <S.Foods>
         <div>
-          <img src={imgcake.url} alt="Cake Image" />
-          <h2>{paragraphcake}</h2>
+          <nav>
+            <img src={imgcake.url} alt="Cake Image" />
+          </nav>
+          <aside>
+            <h2>{paragraphcake}</h2>
+          </aside>
         </div>
         <div>
-          <img src={imgcake.url} alt="Pizza Image" />
-          <h2>{paragraphpizza}</h2>
+          <nav>
+            <img src={imgpizza.url} alt="Pizza Image" />
+          </nav>
+          <aside>
+            <h2>{paragraphpizza}</h2>
+          </aside>
         </div>
         <div>
-          <img src={imgshake.url} alt="Shake Image" />
-          <h2>{paragraphshake}</h2>
+          <nav>
+            <img src={imgshake.url} alt="Shake Image" />
+          </nav>
+          <aside>
+            <h2>{paragraphshake}</h2>
+          </aside>
         </div>
       </S.Foods>
       <S.Spoon>

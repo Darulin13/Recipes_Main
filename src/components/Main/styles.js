@@ -21,18 +21,28 @@ export const Foods = styled.section`
   flex-direction: row;
   justify-content: space-evenly;
   div {
-    width: 33.3%;
+    width: 20vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
   }
-  img {
-    width: 100%;
-    border: solid;
+  nav {
+    width: 20vw;
   }
-  h2 {
-    border: solid;
+  img {
+    width: 20vw;
+  }
+  aside {
+    border-top: none;
+    border-bottom: inset;
+    border-right: inset;
+    border-left: inset;
+    width: 20vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 export const Spoon = styled.section`
@@ -79,6 +89,7 @@ export const Subscribe = styled.section`
   h2{
     text-align:center;
      width: 20vw;
+     
       
   }
   picture{

@@ -39,10 +39,37 @@ export function Footer() {
     facebook,
     instagram
   } = data.recipedata.footers[0];
+  console.log("Footer", data);
 
   return (
-    <>
-      <S.Container>{about}</S.Container>
-    </>
+    <S.Container>
+      <div>
+        <ul>
+          <li>
+            <img src={instagram.url} alt="Instagram icon" />{" "}
+          </li>
+          <li>
+            {" "}
+            <img src={twitter.url} alt="Twitter icon" />
+          </li>
+          <li>
+            {" "}
+            <img src={facebook.url} alt="Facebook icon" />
+          </li>
+          <li>
+            {" "}
+            <img src={pinterest.url} alt="Pinterest icon" />
+          </li>
+        </ul>
+        <ul>
+          <li>{about}</li>
+          <li>{recipes}</li>
+          <li>{subscribe}</li>
+        </ul>
+      </div>
+      <nav>
+        <p>info</p>
+      </nav>
+    </S.Container>
   );
 }
