@@ -68,7 +68,7 @@ export function Footer() {
         </ul>
       </div>
       <nav>
-        <p>info</p>
+        <p>{info}</p>
       </nav>
     </S.Container>
   );

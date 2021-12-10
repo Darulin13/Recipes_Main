@@ -69,6 +69,20 @@
             "port": 46363
           },
           "closeable": true
+        },
+        {
+          "id": "codesandbox.browser",
+          "options": {
+            "port": 44277
+          },
+          "closeable": true
+        },
+        {
+          "id": "codesandbox.browser",
+          "options": {
+            "port": 37021
+          },
+          "closeable": true
         }
       ]
     },
